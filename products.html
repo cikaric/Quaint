@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quaint</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="fa/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+    <header id="header">
+        <div class="wrapper">
+            <div id="respmenu">
+                <i class="fas fa-bars"></i>
+                <nav id="respmenu-nav">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="our story.html">our story</a></li>
+                        <li><a href="products.html">products</a></li>
+                        <li><a href="candle care.html">candle care</a></li>
+                        <li><a href="find us.html">find us</a></li>
+                        <li><a href="contact.html">contact and order</a></li>
+                    </ul>
+                </nav><!-- end #respmenu-nav -->
+            </div><!-- end #respmenu -->  
+
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo Quaint.">
+                </a>
+            </div><!-- end #logo -->
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="our story.html">our story</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="candle care.html">candle care</a></li>
+                    <li><a href="find us.html">find us</a></li>
+                    <li><a href="contact.html">contact and order</a></li>
+                </ul>
+            </nav><!-- end #nav -->
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/Quaint-103890031735432" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/quaint.uae/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div><!-- end .social-media -->
+        </div><!-- end .wrapper -->	
+    </header><!-- end #header -->
+
+        <div class="wrapper">
+            <p><a href="#" class="button">order&nbsp;here</a></p>
+        </div>
+
+<div id="products-img" class="wrapper">
+    <div class="grid">
+        <div class="grid-item"><img src="img/img1.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img2.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img3.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img4.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img5.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img6.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img7.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img8.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img9.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img10.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img11.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img12.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img13.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img14.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img15.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img16.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img17.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img18.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img19.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img20.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img21.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img22.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img23.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img24.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img25.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img26.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img27.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img28.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img29.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img30.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img31.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img32.jpg" alt=""></div>
+        <div class="grid-item"><img src="img/img33.jpg" alt=""></div>
+        
+    </div></div>
+
+
+    
+    <footer>
+        <p>&copy;<a href="index.html">Quaint.</a>All rights reserved</p>
+    </footer><!-- end footer -->
+    
+    <script>
+        var menu = document.querySelector("#respmenu-nav ul");
+        var bttn = document.querySelector("#respmenu");
+        
+        bttn.onclick = function() {
+            menu.classList.toggle("open");
+        }
+    </script>
+
+
+<script src="js/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+<script>
+    var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+
+
+var msnry = new Masonry( '.grid', {
+ 
+});
+</script>
+</body>
+</html>

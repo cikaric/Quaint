@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quaint</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="fa/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+
+</head>
+<body>
+ 
+    <header id="header">
+        <div class="wrapper">
+            <div id="respmenu">
+                <i class="fas fa-bars"></i>
+                <nav id="respmenu-nav">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="our story.html">our story</a></li>
+                        <li><a href="products.html">products</a></li>
+                        <li><a href="candle care.html">candle care</a></li>
+                        <li><a href="find us.html">find us</a></li>
+                        <li><a href="contact.html">contact and order</a></li>
+                    </ul>
+                </nav><!-- end #respmenu-nav -->
+            </div><!-- end #respmenu -->  
+
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo Quaint.">
+                </a>
+            </div><!-- end #logo -->
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="our story.html">our story</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="candle care.html">candle care</a></li>
+                    <li><a href="find us.html">find us</a></li>
+                    <li><a href="contact.html">contact and order</a></li>
+                </ul>
+            </nav><!-- end #nav -->
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/Quaint-103890031735432" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/quaint.uae/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div><!-- end .social-media -->
+        </div><!-- end .wrapper -->	
+    </header><!-- end #header -->
+
+    <div id="location">
+        <div id="map">
+        </div><!-- end #map -->
+    </div><!-- end #location -->
+
+    <footer>
+        <p>&copy;<a href="index.html">Quaint.</a>All rights reserved</p>
+    </footer><!-- end footer -->
+    
+    <script>
+        var menu = document.querySelector("#respmenu-nav ul");
+        var bttn = document.querySelector("#respmenu");
+        
+        bttn.onclick = function() {
+            menu.classList.toggle("open");
+        }
+    </script>
+ 
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin="">
+</script>	
+
+<script>
+	var map = L.map('map').setView([25.206039020555078, 55.27232367215311], 14);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+</script>
+</body>
+</html>
